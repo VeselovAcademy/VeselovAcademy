@@ -96,17 +96,14 @@ int main() {
 	int begin{};
 	begin = time(0);
 
-	char x{};//column A
-	char y{};//row 8
-	//cout << "Enter initial position on the board, example - A8: ";
-	//cin >> x >> y;
+	char x{};
+	char y{};
 	cout << "Starting time: ";
 	mytime();
 	cout << "Loading...";
 	
 	makeMove( 0, 1); //A -65, 8 - 56
-	//system("cls");
-	//cout << "Initial position: " << x << y << endl;
+	
 	for (int i = 0; i < side * side; i++) {
 	
 			cout << (char)path[i][1] << " " << path[i][0];
